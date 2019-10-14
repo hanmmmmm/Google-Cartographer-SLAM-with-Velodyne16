@@ -1,8 +1,8 @@
 # Google-Cartographer-with-Velodyne16
 
 This repository is for demostrating SLAM using Velodyne 16 Lidar, with Google Cartographer SLAM package in ROS environment. 
-(Google Cartographer SLAM:  https://google-cartographer-ros.readthedocs.io/en/latest/ )
-(ROS Robot Operating System: http://wiki.ros.org/kinetic  )
+ (Google Cartographer SLAM:  https://google-cartographer-ros.readthedocs.io/en/latest/ )
+ (ROS Robot Operating System: http://wiki.ros.org/kinetic  )
 
 video demo on Youtube: https://www.youtube.com/watch?v=XRpibHqHsPU
 
