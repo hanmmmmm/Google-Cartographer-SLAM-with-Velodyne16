@@ -15,3 +15,13 @@ To use these files on your robot, you could create your own ros package in catki
 Remember to modify the link names of lidar, IMU, base_link and etc. 
 
 If everything is set correctly, using roslaunch to start the sensors and cartographer_launch_file, and RVIZ will automatically open. 
+
+
+========================================================================
+For point cloud, it could be either 2D or 3D.
+2D point cloud can only produce 2D SLAM, while 3D point cloud can produce either 2D or 3D SLAM.
+If you use some 2D Lidar, like RPLidar, remember to change frame names, and rostopic names.
+Velodyne Lidar provides both 3D and 2D point cloud.
+
+According to Google Cartographer webpages, 2D SLAM can run without IMU, but, from my experience, the performance is not good, you could easily lost while moving fast. 
+
