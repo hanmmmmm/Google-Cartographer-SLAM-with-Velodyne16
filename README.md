@@ -14,4 +14,4 @@ IMU provides 3-axis acceleration and 3-axis gryoscope, with convariance matrices
 To use these files on your robot, you could create your own ros package in catkin_ws or simply move these files into corresponding location in the installed Cartographer_ros package. 
 Remember to modify the link names of lidar, IMU, base_link and etc. 
 
-
+If everything is set correctly, using roslaunch to start the sensors and cartographer_launch_file, and RVIZ will automatically open. 
