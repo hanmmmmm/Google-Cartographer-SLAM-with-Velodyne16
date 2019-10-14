@@ -18,6 +18,7 @@ If everything is set correctly, using roslaunch to start the sensors and cartogr
 
 
 ========================================================================
+
 For point cloud, it could be either 2D or 3D.
 2D point cloud can only produce 2D SLAM, while 3D point cloud can produce either 2D or 3D SLAM.
 If you use some 2D Lidar, like RPLidar, remember to change frame names, and rostopic names.
