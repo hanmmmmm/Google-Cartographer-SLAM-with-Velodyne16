@@ -20,6 +20,8 @@ Some tips for setting up the config files are listed below, and some my experien
 
 ========================================================================
 
+## 2D / 3D mode
+
 For point cloud, it could be either 2D or 3D.
 2D point cloud can only produce 2D SLAM, while 3D point cloud can produce either 2D or 3D SLAM.
 If you use some 2D Lidar, like RPLidar, remember to change frame names, and rostopic names.
@@ -29,7 +31,7 @@ According to Google Cartographer webpages, 2D SLAM can run without IMU, but, fro
 
 ========================================================================
 
-tf and frames:
+## tf and frames:
 
 Some links might be helpful for debugging tf: 
 
@@ -44,6 +46,8 @@ https://github.com/cartographer-project/cartographer_ros/issues/300
 
 Odometry with Cartographer:
 https://answers.ros.org/question/311263/odometry-with-cartographer/
+
+### my notes:
 
 there can be only exact one source of odometry in this slam system, either generated from Cartographer, or generated from other sensors (e.g. wheel encoders).
 
@@ -70,9 +74,13 @@ map frame is always 'map', unless you have 'odom' already attached to another li
 
 ========================================================================
 
+## files path
+
 You could use the absolute path of lua/urdf files in launch file. This could be helpful because there are multiple cartographer_ros locations.  
 
 ========================================================================
+
+## stable but wrong diretion
 
 If map -> odom transform acts stable but weird orientation, then check imu reading and orientation. Cartographer seems to build map->odom transform based on imu readings. 
 
